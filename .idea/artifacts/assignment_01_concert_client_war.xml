@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="assignment-01-concert-client:war">
+    <output-path>$PROJECT_DIR$/se325-concert-client/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>assignment-01-concert-client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="assignment-01-concert-client-1.0.war">
+      <element id="artifact" artifact-name="assignment-01-concert-client:war exploded" />
+    </root>
+  </artifact>
+</component>

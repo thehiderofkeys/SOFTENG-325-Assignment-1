@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="assignment-01-concert-client:war exploded">
+    <output-path>$PROJECT_DIR$/se325-concert-client/target/assignment-01-concert-client-1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>assignment-01-concert-client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="assignment-01-concert-client" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/se325-concert-client/target/assignment-01-concert-client-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="assignment-01-concert-client/web/Web" />
+    </root>
+  </artifact>
+</component>

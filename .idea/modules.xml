@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignment-01-concert.iml" filepath="$PROJECT_DIR$/assignment-01-concert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se325-concert-client/assignment-01-concert-client.iml" filepath="$PROJECT_DIR$/se325-concert-client/assignment-01-concert-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se325-concert-common/assignment-01-concert-common.iml" filepath="$PROJECT_DIR$/se325-concert-common/assignment-01-concert-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/se325-concert-service/assignment-01-concert-service.iml" filepath="$PROJECT_DIR$/se325-concert-service/assignment-01-concert-service.iml" />
+    </modules>
+  </component>
+</project>
