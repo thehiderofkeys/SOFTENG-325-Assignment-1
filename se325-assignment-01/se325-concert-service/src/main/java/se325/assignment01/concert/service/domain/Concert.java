@@ -7,6 +7,10 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 import javax.persistence.*;
+
+/***
+ * Concert Domain Model
+ */
 @Entity
 @Table(name = "CONCERTS")
 public class Concert {
@@ -25,7 +29,8 @@ public class Concert {
     @CollectionTable(name = "CONCERT_DATES", joinColumns = @JoinColumn(name = "CONCERT_ID"))
     @Column(name = "DATE")
     private Set<LocalDateTime> dates = new HashSet<>();
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany
+    @Fetch(FetchMode.SUBSELECT)
     @JoinTable(name = "CONCERT_PERFORMER",
             joinColumns = @JoinColumn(name = "CONCERT_ID"),
             inverseJoinColumns = @JoinColumn(name = "PERFORMER_ID")

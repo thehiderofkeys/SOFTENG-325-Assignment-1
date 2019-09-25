@@ -1,6 +1,9 @@
 package se325.assignment01.concert.service.domain;
 import javax.persistence.*;
 
+/***
+ * User Domain Model
+ */
 @Entity
 @Table(name = "USERS")
 public class User {
@@ -50,6 +53,11 @@ public class User {
     public void setHash(int hash) {
         this.hash = hash;
     }
+
+    /***
+     * Creates a Hash Code for the User Object. Consistent hash code for every instance of User
+     * @return HashCode for User, sum of username and password hashCodes.
+     */
     @Override
     public int hashCode() {
         return (username.hashCode()+password.hashCode());

@@ -8,6 +8,9 @@ import se325.assignment01.concert.service.domain.Seat;
 import java.util.LinkedList;
 import java.util.List;
 
+/***
+ * Helper class to map Booking DTO to Domain Model.
+ */
 public class BookingMapper {
     public static BookingDTO toDTO(Booking booking){
         BookingDTO dto = new BookingDTO();

@@ -2,14 +2,16 @@ package se325.assignment01.concert.service.mapper;
 
 import se325.assignment01.concert.common.dto.ConcertDTO;
 import se325.assignment01.concert.common.dto.ConcertSummaryDTO;
-import se325.assignment01.concert.common.dto.PerformerDTO;
 import se325.assignment01.concert.service.domain.Concert;
 import se325.assignment01.concert.service.domain.Performer;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
 
+
+/***
+ * Helper class to map Concert DTO to Domain Model.
+ */
 public class ConcertMapper {
     public static Concert toDomainModel(ConcertDTO dto){
         return new Concert(
@@ -29,7 +31,7 @@ public class ConcertMapper {
         dto.setDates(new ArrayList<LocalDateTime>(concert.getDates()));
         dto.setPerformers(new ArrayList<>());
         for(Performer performer: concert.getPerformers()){
-            dto.getPerformers().add(PerfomerMapper.toDTO(performer));
+            dto.getPerformers().add(PerformerMapper.toDTO(performer));
         }
         return dto;
     }

@@ -5,6 +5,10 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
+
+/***
+ * Seat Domain Model
+ */
 @Entity
 @IdClass(SeatKey.class)
 public class Seat {
@@ -16,6 +20,8 @@ public class Seat {
 	@Id
 	private LocalDateTime date;
 	private BigDecimal price;
+	@Version
+	private Long version;
 	public Seat() {}
 
 	public Seat(String label, boolean isBooked, LocalDateTime date, BigDecimal price) {

@@ -5,6 +5,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * Booking Domain Model.
+ */
 @Entity
 public class Booking {
 
@@ -13,7 +16,7 @@ public class Booking {
     private long id;
     private long concertId;
     private LocalDateTime date;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Seat> seats = new ArrayList<>();
     @ManyToOne
     private User user;

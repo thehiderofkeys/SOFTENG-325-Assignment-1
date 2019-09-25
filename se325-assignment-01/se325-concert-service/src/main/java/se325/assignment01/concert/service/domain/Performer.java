@@ -7,6 +7,9 @@ import se325.assignment01.concert.common.types.Genre;
 
 import javax.persistence.*;
 
+/***
+ * Performer Domain Model
+ */
 @Entity
 @Table(name = "PERFORMERS")
 public class Performer{
